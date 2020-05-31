@@ -24,7 +24,7 @@ Feature: Search Properties For Sale
      # |Liverpool|£120,000|£230,000|Flats|3+ |Flats    |
       #|Birmingham|          |        |   |    |          |
 
-  @ignore
+
   Scenario Outline: customer can search for any properties
     Given I navigate to rightmove homepage
     When I enter a "<Location>" in the search text box
@@ -43,7 +43,6 @@ Feature: Search Properties For Sale
       |Location| MinPrice|MaxPrice|Property|Bed|PropertyType|
       |        |£120,000|£230,000|Houses |3+ |Houses      |
 
-  @ignore
   Scenario Outline: Error page is displayed for invalid search
     Given I navigate to rightmove homepage
     When I enter a "<Location>" in the search text box
